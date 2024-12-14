@@ -4,7 +4,7 @@
  * @name Damper
  *
  * @description
- * Execute multiple `function` calls in a `timeout`ё` amount of time just once
+ * Execute multiple `function` calls in a `timeout` amount of time just once
  * 
  * You may also know this technology as a "debouncer" (you are free to use any name)
  * I prefer "damper", from the word "демпфер"
