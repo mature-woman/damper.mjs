@@ -1,4 +1,5 @@
-"use strict";/**
+"use strict";
+/**
  * @name Damper
  *
  * @description
@@ -32,5 +33,4 @@
  *
  * @license http://www.wtfpl.net/ Do What The Fuck You Want To Public License
  * @author Arsen Mirzaev Tatyano-Muradovich <arsen@mirzaev.sexy>
- */
-export default function e(e,p=300,t){let i;return(...s)=>new Promise(((u,l)=>{clearTimeout(i),"number"==typeof t&&s[t]?("number"==typeof t&&(s=[...s.splice(0,t),...s.splice(t+1)]),s.push(u,l),e.apply(this,s)):("number"==typeof t&&(s=[...s.splice(0,t),...s.splice(t+1)]),s.push(u,l),i=setTimeout((()=>e.apply(this,s)),p))}))}
+ */export function damper(e,p=300,t){let s;return(...i)=>new Promise(((r,u)=>{clearTimeout(s),"number"==typeof t&&i[t]?("number"==typeof t&&(i=[...i.splice(0,t),...i.splice(t+1)]),i.push(r,u),e.apply(this,i)):("number"==typeof t&&(i=[...i.splice(0,t),...i.splice(t+1)]),i.push(r,u),s=setTimeout((()=>e.apply(this,i)),p))}))}
