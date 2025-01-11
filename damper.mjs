@@ -35,7 +35,7 @@
  * @license http://www.wtfpl.net/ Do What The Fuck You Want To Public License
  * @author Arsen Mirzaev Tatyano-Muradovich <arsen@mirzaev.sexy>
  */
-export default function damper(func, timeout = 300, force) {
+export function damper(func, timeout = 300, force) {
     // Declaring the timer for executing the function
     let timer;
 
