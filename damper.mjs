@@ -49,8 +49,8 @@ export function damper(func, timeout = 300, force) {
 
                 // Deleting the force argument
                 if (typeof force === "number") args = [
-                    ...args.splice(0, force),
-                    ...args.splice(force)
+                    ...Array.from(args).splice(0, force),
+                    ...Array.from(args).splice(force + 1)
                 ];
 
                 // Writing promise handlers into the arguments variable
@@ -63,8 +63,8 @@ export function damper(func, timeout = 300, force) {
 
                 // Deleting the force argument
                 if (typeof force === "number") args = [
-                    ...args.splice(0, force),
-                    ...args.splice(force)
+                    ...Array.from(args).splice(0, force),
+                    ...Array.from(args).splice(force + 1)
                 ];
 
                 // Writing promise handlers into the arguments variable
