@@ -33,4 +33,4 @@
  *
  * @license http://www.wtfpl.net/ Do What The Fuck You Want To Public License
  * @author Arsen Mirzaev Tatyano-Muradovich <arsen@mirzaev.sexy>
- */export function damper(e,p=300,t){let s;return(...i)=>new Promise(((r,u)=>{clearTimeout(s),"number"==typeof t&&i[t]?("number"==typeof t&&(i=[...Array.from(i).splice(0,t),...Array.from(i).splice(t + 1)]),i.push(r,u),e.apply(this,i)):("number"==typeof t&&(i=[...Array.from(i).splice(0,t),...Array.from(i).splice(t + 1)]),i.push(r,u),s=setTimeout((()=>e.apply(this,i)),p))}))}
+ */export default function damper(e,p=300,t){let s;return(...i)=>new Promise(((r,u)=>{clearTimeout(s),"number"==typeof t&&i[t]?("number"==typeof t&&(i=[...Array.from(i).splice(0,t),...Array.from(i).splice(t + 1)]),i.push(r,u),e.apply(this,i)):("number"==typeof t&&(i=[...Array.from(i).splice(0,t),...Array.from(i).splice(t + 1)]),i.push(r,u),s=setTimeout((()=>e.apply(this,i)),p))}))}
